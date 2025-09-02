@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calcular velocidad de un automovil</title>
+</head>
+</html>
+ <h1>calcular velocidad de un automovil</h1>
+ <form id="form">
+    scrollamount
+     <label for="distancia">distancia (km):</label>
+     <input type="number" id="distancia" required>
+     <br>
+     <label for="tiempo">tiempo (horas):</label>
+     <input type="number" id="tiempo" required>
+     <br>
+     <button type="submit">Calcular Velocidad</button>
+</form>
+<div id="resultado"></div>
+<script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const distancia = parseFloat(document.getElementById("distancia").value);
+        const tiempo = parseFloat(document.getElementById("tiempo").value);
+
+        const velocidad = distancia / tiempo;
+
+        document.getElementById("resultado").innerText = `La velocidad es ${velocidad.toFixed(2)} km/h.`;
+    });
+</script>
