@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora de precio por peso y peso total de paquete</title>
+</head>
+<body>
+    <h1>Calculadora de precio por peso y peso total de paquete</h1>
+    <form id="calculadora">
+        <label for="peso-producto">Peso del producto (g):</label>
+        <input type="number" id="peso-producto" required>
+        <br>
+        <label for="precio-producto">Precio del producto ($/g):</label>
+        <input type="number" id="precio-producto" required>
+        <br>
+        <label for="cantidad-producto">Cantidad de productos:</label>
+        <input type="number" id="cantidad-producto" required>
+        <br>
+        <button id="Calcular">Calcular</button>
+    </form>
+    <p id="resultado-precio"></p>
+    <p id="resultado-peso"></p>
+
+    <script src="1_numero.js"></script>
+</body>
+</html>
